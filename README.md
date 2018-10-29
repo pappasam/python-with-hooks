@@ -1,12 +1,11 @@
-# Formatters + Hooks: black, isort, pylint, and pre-commit
+# Formatters + Hooks: autopep8, pylint, and pre-commit
 
 This repository provides a quick PoC to automate code linting before we are
 able to commit Python code to git.
 
 ## Tools
 
-* [black](https://github.com/ambv/black): a code formatter
-* [isort](https://github.com/timothycrosley/isort): formats Python import statements
+* [autopep8](https://github.com/hhatto/autopep8): a code simple formatter
 * [pylint](https://github.com/PyCQA/pylint): a great linter
 * [pre-commit](https://github.com/pre-commit/pre-commit): a project that makes it easy to run the above tools pre-commit
 
