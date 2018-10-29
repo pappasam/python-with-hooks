@@ -5,7 +5,6 @@
 # pylint: disable=unused-import
 
 import os
-import shutil
 from os.path import (
     _joinrealpath,
     abspath,
@@ -15,6 +14,7 @@ from os.path import (
     devnull,
     getatime,
 )
+import shutil
 
 # This is a comment
 A = 12
