@@ -1,26 +1,16 @@
 fail_fast: true
 repos:
-  # - repo: https://github.com/pre-commit/mirrors-autopep8
-  #   rev: master
-  #   hooks:
-  #     - id: autopep8
-  # - repo: https://github.com/pre-commit/mirrors-pylint
-  #   rev: master
-  #   hooks:
-  #     - id: pylint
-  #       language_version: python3.7
-
   - repo: local
     hooks:
-    - id: system
+    - id: autopep8
+      name: AutoPep8
+      entry: python -m autopep8 --in-place
+      language: system
+      types: [python]
+  - repo: local
+    hooks:
+    - id: pylint
       name: PyLint
       entry: python -m pylint
       language: system
-      files: \.py$
-  - repo: local
-    hooks:
-    - id: system
-      name: AutoPep8
-      entry: python -m autopep8
-      language: system
-      files: \.py$
+      types: [python]
