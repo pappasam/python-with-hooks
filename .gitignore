@@ -13,6 +13,7 @@ docs/_build/
 .mypy_cache/
 .pytest_cache/
 *.coverage*
+.python-version
 
 # Vim
 *.swp
