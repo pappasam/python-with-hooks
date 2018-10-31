@@ -14,6 +14,13 @@ repos:
     hooks:
     - id: system
       name: PyLint
-      entry: python -m pylint.__main__
+      entry: python -m pylint
+      language: system
+      files: \.py$
+  - repo: local
+    hooks:
+    - id: system
+      name: AutoPep8
+      entry: python -m autopep8
       language: system
       files: \.py$
